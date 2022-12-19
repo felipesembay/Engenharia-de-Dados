@@ -44,3 +44,7 @@ O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apr
     - Subir os CSV Covid 19 do site da Google (csv) para o SnowFlake. 
       - Os arquivos que serão usados serão: Epidemiology, Economy, Index e Demographics. 
       https://health.google.com/covid-19/open-data/raw-data
+
+- Transformação: Será feito no DBT:
+  - Criação da Conta
+  - Conexão com o Github
