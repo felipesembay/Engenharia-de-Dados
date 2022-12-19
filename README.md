@@ -34,5 +34,12 @@ O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apr
  Infraestrutura: (em desenvolvimento)
 
  - Setar as permissões do Gitpod ao Repoitório no Github
+
  - Subir o Airbyte via Docker
+
  - Subir o Airflow via Docker
+
+ - Snowflake Data Warehouse:
+    - Criar conta no Snowflake
+    - Subir os CSV Covid 19 do site da Google (csv) para o SnowFlake. 
+      - Os arquivos que serão usados serão: Epidemiology, Economy, Index e Demographics. 
