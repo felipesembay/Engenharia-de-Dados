@@ -18,5 +18,10 @@ O projeto consiste em:
  - Fazer Scrapy nos sites do **fundamentus** e do **fundsexplorer.com.br/ranking** para fazer o scrapy referente as informações fundamentalistas das ações e das cotas dos fundos imobiliários. 
  - Utilizar a **biblioteca QUANDL** do Python para capturar os seguintes dados macroeconômicos: SELIC, Dólar, CDI, IPCA. 
 
+Na parte de criação dos Dashboards, foram utilizados as seguintes ferramentas: 
+- **FIGMA** para a criação do layout ou esqueleto do Dashboard. 
+- **POWER BI** para a criação do Dashboard. 
+
+O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apresentou alguns gráficos insatisfatórios e limitados, como por exemplo, o gráfico de **Candle Stick** ou **Gráfico de Velas**. Após detectar essa limitação, o Power BI foi o software de visualização de dados escolhidos para ser utilizado no projeto. 
 
  --------------------------------------------------------------------------------------------
