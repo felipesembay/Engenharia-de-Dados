@@ -1,0 +1,271 @@
+
+DROP DATABASE IF EXISTS economia;
+CREATE DATABASE IF NOT EXISTS economia;
+USE economia;
+
+CREATE TABLE `Dados_macroeconomicos` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Data` varchar(255),
+  `Selic` mediumint default NULL,
+  `CDI` mediumint default NULL,
+  `IPCA` mediumint default NULL,
+  `Dólar` mediumint default NULL,
+
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+CREATE TABLE `PIB` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Date` varchar(255),
+  `Pib` mediumint default NULL,
+
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+
+CREATE TABLE `fundamentos` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `cotacao` mediumint default NULL,
+  `pl` mediumint default NULL,
+  `pvp` mediumint default NULL,
+  `psr` mediumint default NULL,
+  `dy` mediumint default NULL,
+  `pa` mediumint default NULL,
+  `pcg` mediumint default NULL,
+  `pebit` mediumint default NULL,
+  `pacl` mediumint default NULL,
+  `evebit` mediumint default NULL,
+  `evebitda` mediumint default NULL,
+  `mrgebit` mediumint default NULL,
+  `mrgliq` mediumint default NULL,
+  `roic` mediumint default NULL,
+  `roe` mediumint default NULL,
+  `liqc` mediumint default NULL,
+  `liq2m` mediumint default NULL,
+  `patrliq` mediumint default NULL,
+  `divbpatr` mediumint default NULL,
+  `c5y` mediumint default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+
+CREATE TABLE `cotações` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Date` varchar(255),
+  `WEGE3` mediumint default NULL,
+  `EMBR3` mediumint default NULL,
+  `AZUL4` mediumint default NULL,
+  `CCRO3` mediumint default NULL,
+  `ECOR3` mediumint default NULL,
+  `GOLL4` mediumint default NULL,
+  `RAIL3` mediumint default NULL,
+  `POSI3` mediumint default NULL,
+  `BRFS3` mediumint default NULL,
+  `JBSS3` mediumint default NULL,
+  `MRFG3` mediumint default NULL,
+  `BEEF3` mediumint default NULL,
+  `SMTO3` mediumint default NULL,
+  `ABEV3` mediumint default NULL,
+  `ASAI3` mediumint default NULL,
+  `CRFB3` mediumint default NULL,
+  `PCAR3` mediumint default NULL,
+  `NTCO3` mediumint default NULL,
+  `RAIZ4` mediumint default NULL,
+  `SLCE3` mediumint default NULL,
+  `AMER3` mediumint default NULL,
+  `ARZZ3` mediumint default NULL,
+  `SOMA3` mediumint default NULL,
+  `LREN3` mediumint default NULL,
+  `MGLU3` mediumint default NULL,
+  `PETZ3` mediumint default NULL,
+  `VIIA3` mediumint default NULL,
+  `ALPA4` mediumint default NULL,
+  `CYRE3` mediumint default NULL,
+  `EZTC3` mediumint default NULL,
+  `MRVE3` mediumint default NULL,
+  `CVCB3` mediumint default NULL,
+  `COGN3` mediumint default NULL,
+  `RENT3` mediumint default NULL,
+  `YDUQ3` mediumint default NULL,
+  `BRML3` mediumint default NULL,
+  `IGTI11` mediumint default NULL,
+  `MULT3` mediumint default NULL,
+  `BPAN4` mediumint default NULL,
+  `BBDC3` mediumint default NULL,
+  `BBDC4` mediumint default NULL,
+  `BBAS3` mediumint default NULL,
+  `BPAC11` mediumint default NULL,
+  `ITSA4` mediumint default NULL,
+  `ITUB4` mediumint default NULL,
+  `SANB11` mediumint default NULL,
+  `BBSE3` mediumint default NULL,
+  `IRBR3` mediumint default NULL,
+  `SULA11` mediumint default NULL,
+  `B3SA3` mediumint default NULL,
+  `CIEL3` mediumint default NULL,
+  `DXCO3` mediumint default NULL,
+  `KLBN11` mediumint default NULL,
+  `SUZB3` mediumint default NULL,
+  `BRAP4` mediumint default NULL,
+  `CMIN3` mediumint default NULL,
+  `VALE3` mediumint default NULL,
+  `BRKM5` mediumint default NULL,
+  `GGBR4` mediumint default NULL,
+  `GOAU4` mediumint default NULL,
+  `CSNA3` mediumint default NULL,
+  `USIM5` mediumint default NULL,
+  `RRRP3` mediumint default NULL,
+  `CSAN3` mediumint default NULL,
+  `PETR3` mediumint default NULL,
+  `PETR4` mediumint default NULL,
+  `PRIO3` mediumint default NULL,
+  `UGPA3` mediumint default NULL,
+  `VBBR3` mediumint default NULL,
+  `HYPE3` mediumint default NULL,
+  `RADL3` mediumint default NULL,
+  `FLRY3` mediumint default NULL,
+  `HAPV3` mediumint default NULL,
+  `QUAL3` mediumint default NULL,
+  `RDOR3` mediumint default NULL,
+  `LWSA3` mediumint default NULL,
+  `CASH3` mediumint default NULL,
+  `TOTS3` mediumint default NULL,
+  `VIVT3` mediumint default NULL,
+  `TIMS3` mediumint default NULL,
+  `SBSP3` mediumint default NULL,
+  `CMIG4` mediumint default NULL,
+  `CPLE6` mediumint default NULL,
+  `CPFE3` mediumint default NULL,
+  `ELET3` mediumint default NULL,
+  `ELET6` mediumint default NULL,
+  `ENBR3` mediumint default NULL,
+  `ENGI11` mediumint default NULL,
+  `ENEV3` mediumint default NULL,
+  `EGIE3` mediumint default NULL,
+  `EQTL3` mediumint default NULL,
+  `TAEE11` mediumint default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+CREATE TABLE `Ibov_info` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Setor` mediumint default NULL,
+  `Código` mediumint default NULL,
+  `Ação` mediumint default NULL,
+  `Tipo` mediumint default NULL,
+  `Qtde. Teórica` BIGINT  default NULL,
+  `Part. %` mediumint default NULL,
+  `Part. % Acum.` mediumint default NULL,
+  `Subsetor` mediumint default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+CREATE TABLE `Ifix_info` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Setor` mediumint default NULL,
+  `Código` mediumint default NULL,
+  `Ação` mediumint default NULL,
+  `Tipo` mediumint default NULL,
+  `Qtde. Teórica` BIGINT  default NULL,
+  `Part. %` mediumint default NULL,
+  `Part. % Acum.` mediumint default NULL,
+  `Subsetor` mediumint default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+CREATE TABLE `fii` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Código do fundo` mediumint default NULL,
+  `Setor` mediumint default NULL,
+  `Preço Atual` mediumint default NULL,
+  `Liquidez Diária` mediumint default NULL,
+  `Dividendo` mediumint  default NULL,
+  `DividendYield` mediumint default NULL,
+  `DY (3M)Acumulado` mediumint default NULL,
+  `DY (6M)Acumulado` mediumint default NULL,
+  `DY (12M)Acumulado` mediumint default NULL,
+  `DY (3M)Média` mediumint default NULL,
+  `DY (6M)Média` mediumint default NULL,
+  `DY (12M)Média` mediumint default NULL,
+  `DY Ano` mediumint  default NULL,
+  `Variação Preço` mediumint default NULL,
+  `Rentab.Período` mediumint default NULL,
+  `Rentab.Acumulada` mediumint default NULL,
+  `PatrimônioLíq.` mediumint default NULL,
+  `VPA` mediumint default NULL,
+  `P/VPA` mediumint default NULL,
+  `DYPatrimonial` mediumint default NULL,
+  `VariaçãoPatrimonial` mediumint  default NULL,
+  `Rentab. Patr.no Período` mediumint default NULL,
+  `Rentab. Patr.Acumulada` mediumint default NULL,
+  `VacânciaFísica` mediumint default NULL,
+  `VacânciaFinanceira` mediumint default NULL,
+  `QuantidadeAtivos` mediumint default NULL,
+
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+CREATE TABLE `fii_cotacao` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Date` varchar(255),
+  `Codigo` mediumint default NULL,
+  `Close` mediumint default NULL,
+  `Open` mediumint default NULL,
+  `Low` mediumint default NULL,
+  `High` mediumint default NULL,
+
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+DROP TABLE IF EXISTS `fii_cotacao_semanal`;
+CREATE TABLE `fii_cotacao_semanal` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Date` varchar(255),
+  `Codigo` mediumint default NULL,
+  `open` mediumint default NULL,
+  `high` mediumint default NULL,
+  `low` mediumint default NULL,
+  `close` mediumint default NULL,
+  `Volume` mediumint default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+
+CREATE TABLE `fii_fund_semanal` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `Código do fundo` mediumint default NULL,
+  `Setor` mediumint default NULL,
+  `Preço Atual` mediumint default NULL,
+  `Liquidez Diária` mediumint default NULL,
+  `Dividendo` mediumint  default NULL,
+  `DividendYield` mediumint default NULL,
+  `DY (3M)Acumulado` mediumint default NULL,
+  `DY (6M)Acumulado` mediumint default NULL,
+  `DY (12M)Acumulado` mediumint default NULL,
+  `DY (3M)Média` mediumint default NULL,
+  `DY (6M)Média` mediumint default NULL,
+  `DY (12M)Média` mediumint default NULL,
+  `DY Ano` mediumint  default NULL,
+  `Variação Preço` mediumint default NULL,
+  `Rentab.Período` mediumint default NULL,
+  `Rentab.Acumulada` mediumint default NULL,
+  `PatrimônioLíq.` mediumint default NULL,
+  `VPA` mediumint default NULL,
+  `P/VPA` mediumint default NULL,
+  `DYPatrimonial` mediumint default NULL,
+  `VariaçãoPatrimonial` mediumint  default NULL,
+  `Rentab. Patr.no Período` mediumint default NULL,
+  `Rentab. Patr.Acumulada` mediumint default NULL,
+  `VacânciaFísica` mediumint default NULL,
+  `VacânciaFinanceira` mediumint default NULL,
+  `QuantidadeAtivos` mediumint default NULL,
+
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
