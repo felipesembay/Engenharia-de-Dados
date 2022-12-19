@@ -45,7 +45,15 @@ O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apr
       - Os arquivos que serão usados serão: Epidemiology, Economy, Index e Demographics. 
       https://health.google.com/covid-19/open-data/raw-data
 
+Extração:
+
+- No **Airbyte:**
+
+  - Conectar com as origens dos csv's;
+  - Criar as entidades no Snowflake através do script base da documentação;
+  - Conectar o destino no Snowflake;
+  - Criar as conexões do Airbyte, associando as origens ao destino;
+  - Testar as conexões. 
+
 - Transformação: Será feito no DBT:
-  - Criação da Conta
-  - Conexão com o Github
-  - 
+  
