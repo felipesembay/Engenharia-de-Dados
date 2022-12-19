@@ -32,3 +32,7 @@ O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apr
  Tarefas:
  
  Infraestrutura: (em desenvolvimento)
+
+ - Setar as permissões do Gitpod ao Repoitório no Github
+ - Subir o Airbyte via Docker
+ - Subir o Airflow via Docker
