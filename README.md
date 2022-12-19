@@ -3,6 +3,7 @@
 Nesse repositório serão adicionados notebooks e arquivos referente a área de **Engenharia de Dados.**
 
 ---------------------------------------------------------------------------------------------
+## Airflow para automatizar a extraação, transformação e carga (ETL) de dados. 
 
 Pasta **Airflow - Data Full Stack** -  Repositório para armanezar os arquivos do Pipeline utilizando **Airflow**. Nessa pasta, estão todos os arquivos das Dag's que foram feitas no Airflow, para automatizar, orquestrar todo o nosso pipeline de Dados. 
 
@@ -25,3 +26,9 @@ Na parte de criação dos Dashboards, foram utilizados as seguintes ferramentas:
 O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apresentou alguns gráficos insatisfatórios e limitados, como por exemplo, o gráfico de **Candle Stick** ou **Gráfico de Velas**. Após detectar essa limitação, o Power BI foi o software de visualização de dados escolhidos para ser utilizado no projeto. 
 
  --------------------------------------------------------------------------------------------
+
+ ## Airbite + DBT + Airflow + Snowflake + Metabase
+
+ Tarefas:
+ 
+ Infraestrutura: (em desenvolvimento)
