@@ -48,3 +48,4 @@ O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apr
 - Transformação: Será feito no DBT:
   - Criação da Conta
   - Conexão com o Github
+  - 
