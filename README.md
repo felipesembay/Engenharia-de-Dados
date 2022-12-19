@@ -1,6 +1,8 @@
 # Engenharia-de-Dados
 
-Nesse repositório serão adicionados notebooks e arquivos referente a área de Engenharia de Dados. 
+Nesse repositório serão adicionados notebooks e arquivos referente a área de **Engenharia de Dados.**
+
+---------------------------------------------------------------------------------------------
 
 Pasta **Airflow - Data Full Stack** -  Repositório para armanezar os arquivos do Pipeline utilizando **Airflow**. Nessa pasta, estão todos os arquivos das Dag's que foram feitas no Airflow, para automatizar, orquestrar todo o nosso pipeline de Dados. 
 
