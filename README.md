@@ -19,4 +19,4 @@ O projeto consiste em:
  - Utilizar a **biblioteca QUANDL** do Python para capturar os seguintes dados macroeconômicos: SELIC, Dólar, CDI, IPCA. 
 
 
- ############################################################################################
+ --------------------------------------------------------------------------------------------
