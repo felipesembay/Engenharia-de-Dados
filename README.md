@@ -3,7 +3,7 @@
 Nesse repositório serão adicionados notebooks e arquivos referente a área de **Engenharia de Dados.**
 
 ---------------------------------------------------------------------------------------------
-## Airflow para automatizar a extraação, transformação e carga (ETL) de dados. 
+## PROJETO 1 : Airflow para automatizar a extração, transformação e carga (ETL) de dados. 
 
 Pasta **Airflow - Data Full Stack** -  Repositório para armanezar os arquivos do Pipeline utilizando **Airflow**. Nessa pasta, estão todos os arquivos das Dag's que foram feitas no Airflow, para automatizar, orquestrar todo o nosso pipeline de Dados. 
 
@@ -27,7 +27,7 @@ O Google Data Studio, ou Looker, chegou a ser utilizado. Porém a ferramenta apr
 
  --------------------------------------------------------------------------------------------
 
- ## Airbite + DBT + Airflow + Snowflake + Metabase
+ ## PROJETO 2: Airbite + DBT + Airflow + Snowflake + Metabase
 
  Tarefas:
  
