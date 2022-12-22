@@ -56,4 +56,11 @@ Extração:
   - Testar as conexões. 
 
 - Transformação: Será feito no DBT:
-  
+  - Criação do Profile de conexão com o SnowFlake;
+  - Criação do Schema;
+  - Criaçao dos modelos bases;
+  - Criação do modelo relacionado;
+  - Visualização gráfica do modelo no próprio DBT;
+  - Teste de execução;
+  - Commits, Branches, Pull, Requests, Merges no Github;
+  - Obtenção do link de conexão com o Airbyte.
